@@ -10,6 +10,7 @@ namespace SolarWatch.Service.CityDataProvider
             string url = $"https://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={apikey}";
 
             using var client = new WebClient();
+
             return client.DownloadString(url);         
         }
     }

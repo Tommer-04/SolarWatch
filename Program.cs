@@ -1,5 +1,7 @@
 using SolarWatch.Service.CityDataProvider;
 using SolarWatch.Service.CityJsonProcessor;
+using SolarWatch.Service.SunDataProvider;
+using SolarWatch.Service.SunJsonProcessor;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ICityDataProvider, CityDataProvider>();
 builder.Services.AddSingleton<ICityJsonProcessor, CityJsonProcessor>();
+builder.Services.AddSingleton<ISunDataProvider, SunDataProvider>();
+builder.Services.AddSingleton<ISunJsonProcessor, SunJsonProcessor>();
 
 var app = builder.Build();
 
