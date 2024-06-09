@@ -1,0 +1,121 @@
+﻿# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+bin/
+obj/
+*.csproj.user
+*.csproj.DotSettings
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Visual Studio Code
+.vscode/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# NPM Packages
+node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# Compiled Java code
+*.class
+
+# Jar Files
+*.jar
+
+# Binary Logs
+*.binlog
+
+# File-based project tools
+tools/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Local History for Visual Studio
+.vs/
+
+# IDE preferences
+.idea/
+
+# Rider
+.idea/
+
+# Mac
+*.DS_Store
+
+# Linux
+*~
+
+# Log files
+*.log
+
+# Database
+*.mdf
+*.ldf
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+.idea/*.dotSettings
+.idea/*.sln.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
+.idea/modules.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# Rider-specific directories
+.idea/
+
+# User-specific files created by Rider
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
+
+# JetBrains Rider plugin files
+.idea/dotnet/dotnet.xml
+.idea/dotnet/_.xml
+
+# Rider caches
+.idea/dotnet/*.xml
+
+# Rider plugin caches
+.idea/dotnet/dependencies.xml
+.idea/dotnet/metadata.xml
+
+# Temporary files
+tmp/
+temp/
+
