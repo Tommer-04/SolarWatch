@@ -4,13 +4,17 @@ namespace SolarWatch.Service.SunDataProvider
 {
     public class SunDataProvider : ISunDataProvider
     {
-        public string GetCurrent(double lat, double lon)
+        public async Task<string> GetCurrent(double lat, double lon)
         {
             string url = $"https://api.sunrise-sunset.org/json?lat={lat}&lng={lon}";
 
-            var client = new WebClient();
+            var client = new HttpClient();
 
-            return client.DownloadString(url) ;
+            var response = await client.GetAsync(url);
+
+            response.EnsureSuccessStatusCode();
+
+            return await response.Content.ReadAsStringAsync();
         }
     }
 }

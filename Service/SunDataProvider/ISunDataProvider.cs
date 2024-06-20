@@ -2,6 +2,6 @@
 {
     public interface ISunDataProvider
     {
-        string GetCurrent(double lat, double lon);
+        Task<string> GetCurrent(double lat, double lon);
     }
 }

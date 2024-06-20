@@ -27,9 +27,9 @@ namespace SolarWatch.Controllers
         }
 
         [HttpGet("Get")]
-        public IActionResult Get([Required] string city)
+        public async Task<IActionResult> Get([Required] string city)
         {
-            var cityData = _cityDataProvider.GetCurrent(city);
+            var cityData = await _cityDataProvider.GetCurrent(city);
 
             if(cityData == "[]") 
             {
@@ -38,7 +38,7 @@ namespace SolarWatch.Controllers
 
             City cityCords = _cityJsonProcessor.Process(cityData);
 
-            var sunData = _sunDataProvider.GetCurrent(cityCords.lat, cityCords.lon);
+            var sunData = await _sunDataProvider.GetCurrent(cityCords.lat, cityCords.lon);
 
             return Ok(_sunJsonProcessor.Process(sunData));         
         }

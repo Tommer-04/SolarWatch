@@ -2,6 +2,6 @@
 {
     public interface ICityDataProvider
     {
-        string GetCurrent(string city);
+        Task<string> GetCurrent(string city);
     }
 }
